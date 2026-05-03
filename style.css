@@ -57,7 +57,8 @@ li a::before {
 li a:hover::before {
     width: 100%;
 }
-.visit-btn {
+
+/* .visit-btn {
     padding: 0.8rem 1.5rem;
     border-radius: 3rem;
     border: none;
@@ -72,8 +73,170 @@ li a:hover::before {
 .visit-btn:hover {
     background: linear-gradient(to right, rgb(238, 4, 238), rgb(11, 88, 255));
     transform: scale(1.03);
-}
+} */
+
 #menu-icon {
     font-size: 2rem;
     display: none;
+}
+
+/* button,button::after {
+  padding: 10px 50px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: transparent;
+  position: relative;
+}
+
+button::after {
+  --move1: inset(50% 50% 50% 50%);
+  --move2: inset(31% 0 40% 0);
+  --move3: inset(39% 0 15% 0);
+  --move4: inset(45% 0 40% 0);
+  --move5: inset(45% 0 6% 0);
+  --move6: inset(14% 0 61% 0);
+  clip-path: var(--move1);
+  content: 'GLITCH';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: block;
+}
+
+button:hover::after {
+  animation: glitch_4011 1s;
+  text-shadow: 10 10px 10px black;
+  animation-timing-function: steps(2, end);
+  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
+  background-color: transparent;
+  border: 3px solid rgb(0, 255, 213);
+}
+
+button:hover {
+  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
+}
+
+button:hover {
+  background-color: transparent;
+  border: 1px solid rgb(0, 255, 213);
+  box-shadow: 0px 10px 10px -10px rgb(0, 255, 213);
+}
+
+@keyframes glitch_4011 {
+  0% {
+    clip-path: var(--move1);
+    transform: translate(0px,-10px);
+  }
+
+  10% {
+    clip-path: var(--move2);
+    transform: translate(-10px,10px);
+  }
+
+  20% {
+    clip-path: var(--move3);
+    transform: translate(10px,0px);
+  }
+
+  30% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  40% {
+    clip-path: var(--move5);
+    transform: translate(10px,-10px);
+  }
+
+  50% {
+    clip-path: var(--move6);
+    transform: translate(-10px,10px);
+  }
+
+  60% {
+    clip-path: var(--move1);
+    transform: translate(10px,-10px);
+  }
+
+  70% {
+    clip-path: var(--move3);
+    transform: translate(-10px,10px);
+  }
+
+  80% {
+    clip-path: var(--move2);
+    transform: translate(10px,-10px);
+  }
+
+  90% {
+    clip-path: var(--move4);
+    transform: translate(-10px,10px);
+  }
+
+  100% {
+    clip-path: var(--move1);
+    transform: translate(0);
+  }
+} */
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 0 10px;
+  color: white;
+  text-shadow: 2px 2px rgb(116, 116, 116);
+  text-transform: uppercase;
+  cursor: pointer;
+  border: solid 2px black;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 17px;
+  background-color: hsl(49deg 98% 60%);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+button:active {
+  transform: scale(0.9);
+  transition: all 100ms ease;
+}
+
+button svg {
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+.play {
+  transition: all 0.5s ease;
+  transition-delay: 300ms;
+}
+
+button:hover svg {
+  transform: scale(3) translate(50%);
+}
+
+.now {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  transition: all 0.5s ease;
+  z-index: 2;
+}
+
+button:hover .now {
+  transform: translateX(10px);
+  transition-delay: 300ms;
+}
+
+button:hover .play {
+  transform: translateX(200%);
+  transition-delay: 300ms;
 }
