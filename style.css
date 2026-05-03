@@ -240,3 +240,46 @@ button:hover .play {
   transform: translateX(200%);
   transition-delay: 300ms;
 }
+
+
+section {
+  min-height: 100vh;
+  padding: 8rem 12%;
+  width: 100%;
+  position: relative;
+}
+
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about .about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10rem;
+}
+
+.about img {
+  width: 30vw;
+  border-radius: 50%;
+}
+.info-box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+info-box h3 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+.info-box h1 {
+  font-size: 4rem;
+  
+}
