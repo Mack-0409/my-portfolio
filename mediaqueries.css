@@ -1,113 +1,224 @@
-@media screen and (max-width: 1400px) {
-  #profile {
-    height: 83vh;
-    margin-bottom: 6rem;
-  }
-  .about-container {
-    flex-wrap: wrap;
-  }
+@media (max-width: 1200px) {
+    #desktop-nav {
+        display: none;
+    }
+
+    #hamburger-nav {
+        display: flex;
+    }
+
+    #profile,
+    #about,
+    #experience,
+    #projects,
+    #contact {
+        padding: 100px 40px 60px;
+    }
+
+    .profile-container,
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .profile-img {
+        width: 300px;
+        height: 300px;
+    }
+
+    .about-img {
+        width: 350px;
+        height: 400px;
+    }
+
+    .profile-text h1 {
+        font-size: 2.8rem;
+    }
+
+    .btn-container {
+        justify-content: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .about-content {
+        text-align: center;
+    }
+
+    .about-stats {
+        justify-content: center;
+    }
+
+    .experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media screen  and (max-width: 1200px) {
-  #desktop-nav {
-    display: none;
-  }
+@media (max-width: 768px) {
+    section {
+        padding: 100px 20px 60px;
+    }
 
-  #hamburger-nav {
-    display: flex;
-  }
-  
-  #experience, .experience-details-container {
-    margin-top: 2rem;
-  }
+    .section-title {
+        margin-bottom: 40px;
+    }
 
-  #profile, .section-container {
-    display: block;
-  }
+    .section-title h1 {
+        font-size: 2rem;
+    }
 
-  .arrow {
-    display: none;
-  }
+    .profile-text h1 {
+        font-size: 2.2rem;
+    }
 
-  section, .section-container {
-    height: fit-content;
-  }
+    .profile-text .typing-text {
+        font-size: 1.2rem;
+    }
 
-  section {
-    margin: 0 5%;
-  }
+    .about-img {
+        width: 300px;
+        height: 350px;
+    }
 
-  .section_pic-container {
-    width: 275px;
-    height: 275px;
-    margin: 0 auto 2rem;
-  }
+    .about-content h2 {
+        font-size: 1.6rem;
+    }
 
-  .about-container {
-    margin-top: 0;
-  }
+    .about-stats {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .stat-item {
+        padding: 15px 40px;
+    }
+
+    .experience-card {
+        padding: 30px;
+    }
+
+    .experience-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .skill-item {
+        justify-content: center;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+
+    footer {
+        padding: 30px 20px;
+    }
+
+    footer .nav-links {
+        flex-direction: column;
+        gap: 15px;
+    }
 }
 
-@media screen and (max-width: 600px) {
-  #contact, footer {
-    height: 40vh;
-  }
+@media (max-width: 480px) {
+    .logo {
+        font-size: 1.3rem;
+    }
 
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
-  }
+    .profile-img {
+        width: 250px;
+        height: 250px;
+    }
 
-  article {
-    font-size: 1rem;
-  }
+    .profile-text h1 {
+        font-size: 1.8rem;
+    }
 
-  footer nav {
-    height: fit-content;
-    margin-bottom: 2rem;
-  }
+    .btn-container {
+        flex-direction: column;
+        gap: 15px;
+    }
 
-  .about-container, .contac-info-upper-container, .btn-container {
-    flex-wrap: wrap;
-  }
+    .btn {
+        width: 100%;
+        padding: 12px 24px;
+    }
 
-  .contac-info-container {
-    margin: 0;
-  }
+    .social-links {
+        gap: 15px;
+    }
 
-  .contac-info-container p, .nav-links li a {
-    font-size: 1rem;
-  }
+    .social-links a {
+        width: 40px;
+        height: 40px;
+    }
 
-  .experience-sub-title {
-    font-size: 1.25rem;
-  }
+    .about-img {
+        width: 280px;
+        height: 320px;
+    }
 
-  .logo {
-    font-size: 1.5rem;
-  }
+    .about-content p {
+        font-size: 0.95rem;
+    }
 
-  .nav-links {
-    flex-direction: column;
-    gap: 0.5rem;
-    text-align: center;
-  }
+    .experience-card {
+        padding: 25px 20px;
+    }
 
-  .section_pic-container {
-    width: auto;
-    height: 46vw;
-    justify-content: center;
-  }
+    .skill-item img {
+        width: 32px;
+        height: 32px;
+    }
 
-  .section_text_p2 {
-    font-size: 1.25rem;
-  }
+    .project-content {
+        padding: 20px;
+    }
 
-  .title {
-    font-size: 2rem;
-  }
+    .project-content h3 {
+        font-size: 1.2rem;
+    }
 
-  .text-container {
-    text-align: justify;
-  }
+    .project-btns {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .project-btn {
+        width: 100%;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (min-width: 1201px) {
+    #hamburger-nav {
+        display: none;
+    }
 }
